@@ -1,7 +1,9 @@
 # AI 智能助手（Spring Boot + DeepSeek）：对话 · 工具调用 · RAG 知识库问答
 
-一个基于 **Spring Boot + DeepSeek API** 构建的 AI 智能助手，集成了三大核心能力：
+一个基于 **Spring Boot + DeepSeek API** 构建的 AI 智能助手，集成三大核心能力：
 **大模型对话**、**Function Calling 工具调用**、**RAG 知识库问答**。
+
+知识库主题为 **《AI Agent 应用开发》技术知识库**，收录大模型、提示工程、RAG、向量化、向量数据库、Function Calling、Agent、幻觉治理等核心概念，可用于 AI 技术问答。
 
 ## ✨ 核心能力
 
@@ -12,6 +14,7 @@
 - ✅ **RAG 知识库问答**：从知识库检索最相关的文档片段，再让大模型基于片段回答
   - 自研文本向量化 + 余弦相似度检索
   - 只将"最相关段落"喂给模型，约束其不幻觉、不乱编
+  - 主题聚焦《AI Agent 应用开发》：LLM、Prompt、RAG、Embedding、向量数据库、Function Calling、Agent、幻觉治理
 
 ## 🛠 技术栈
 
@@ -39,7 +42,7 @@ chat-demo/
 
 ### 1. 配置 API Key
 
-在 `src/main/resources/application.properties` 填入 DeepSeek Key：
+在 `src/main/resources/application.properties` 填入 DeepSeek Key（该文件已被 .gitignore 忽略，不会上传泄露）：
 
 ```properties
 deepseek.api-key=sk-你的key
